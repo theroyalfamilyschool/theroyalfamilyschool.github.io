@@ -18,8 +18,7 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/waypoints.js"></script>
+  
 </head>
 <body>
     <!-- Navigation -->
@@ -51,15 +50,7 @@
                 </div>
 
                 <div class="dropdown">
-                    <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#gallery">GALLERY</a>
-                    <div class="dropdown-menu">
-                        <h5 class="dropdown-header">PHOTOS</h5>
-                        <a href="https://theroyalfamilyschool.github.io/gallery.html" class="dropdown-item small">Photos of Pupils</a>
-                        <a href="https://theroyalfamilyschool.github.io/gallery.html" class="dropdown-item small">Photos of Non-teaching staff</a>
-                        <a href="https://theroyalfamilyschool.github.io/gallery.html" class="dropdown-item small">Photos of Management</a>
-                   </div>
-                
-               
+                    <a class="nav-item nav-link" href="#galleryAnchor" href="#gallery">GALLERY</a>  
             </div>
             <div>
                 <a class="nav-item nav-link" href="#contactAnchor"><i class="fas fa-envelope-open"></i> CONTACT US</a>
@@ -69,24 +60,24 @@
 </nav><!--End of navigation-->
     
       <!-- Slider -->
-    <div class="carousel slide" id="mainSlide">
+    <div class="carousel slide carousel-fade" id="mainSlide">
         <div class="carousel-inner">
 
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-interval="3000">
                 <img class="w-100 d-block" src="./images/graduation222.jpg" alt="">
                 <div class="centered">EXCELLENCE, WISDOM AND PEACE</div>
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" data-interval="3000" >
                 <img class="w-100 d-block" src="./images/awards.jpg" alt="">
                 <div class="centered">HARD WORK PAYS</div>
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" data-interval="3000">
                 <img class="w-100 d-block" src="./images/career.jpg" alt="">
                 <div class="centered">THE FUTURE HEALTH WORKERS</div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-interval="3000">
                 <img class="w-100 d-block" src="./images/beach.jpg" alt="">
                 <div class="centered">FUN TIME</div>
             </div>
@@ -168,10 +159,336 @@
                     <a class="btn btn-sm btn-dark" href="#">Enrol Now</a>
                 </div>
             </div>
+            
         </div>
 
-</body>
-<footer></footer>
+        <!--COUNTERS-->
+        <section class="counters">
+            <div class="container">
+                <div>
+                    <i class="fas fa-award fa-4x"></i>
+                    <div class="counter" data-target="10">10</div>
+                    <h3>AWARDS</h3>
+                </div>
+                <div>
+                    <i class="fas fa-chalkboard-teacher fa-4x"></i>
+                    <div class="counter" data-target="20">20</div>
+                    <h3>TEACHERS</h3>
+                </div>
+                <div>
+                    <i class="fas fa-graduation-cap fa-4x"></i>
+                    <div class="counter" data-target="300">300</div>
+                    <h3>STUDENTS</h3>
+                </div>
+                <div>
+                    <i class="fas fa-trophy fa-4x"></i> 
+                    <div class="counter" data-target="100">100</div>
+                    <h3>PASS RATE(%)</h3>
+                </div>
+            </div>
+    </section> 
+    <div class="container-fluid p-0">
+        <h4 class="bg-light p-5" id="newsAnchor">OUR LATEST NEWS</h4>
+        
+        <!-- NEWS CARD-->
+        <div class="card-deck p-5">
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">OUR SCHOOL IS SHOUTDOWN DUE TO CODVID-19</h6>
+                    <img class="card-img-top" src="./images/closed.jpg" alt="">
+                    <p class="card-text">The school is shutdown until further notice. With regard to the directives from the president our school is shutdown but the administration is working hard to reach our pupils at home come the next term.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">TOUCH-A-HEART FOUNDATION</h6>
+                    <img class="card-img-top" src="./images/royalorphans.jpg" alt="">
+                    <p class="card-text">Touch-a-heart Foundationis a non-profit organization dedicated to enriching the lives of disadvantaged children in Ghana.</p>
+                    <a class="btn btn-sm btn-dark" href="#">Get In Touch</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">ADMISSION IS IN PROGRESS</h6>
+                    <img class="card-img-top" src="./images/admission.jpg" alt="">
+                    <p class="card-text">The Royal Family School subscribes to equal opportunity admission policy which makes it possible for pupils of all ages.</p>
+                    <a class="btn btn-sm btn-dark" href="#">Enrol Now</a>
+                </div>
+            </div>
+        </div>
+
+ <!--GALLERY-->
+ <!--Carousel Wrapper-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+    <h4 class="bg-light p-5" id="galleryAnchor">OUR GALLERY</h4>
+    <!--Controls-->
+    <div class="controls-top">
+      <a class="black-text" href="#multi-item-example" data-slide="prev"><i class="fas fa-angle-left fa-3x pr-3"></i></a>
+      <a class="black-text" href="#multi-item-example" data-slide="next"><i class="fas fa-angle-right fa-3x pl-3"></i></a>
+    </div>
+    <!--/.Controls-->
+  
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+  
+      <!--First slide-->
+      <div class="carousel-item active">
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/graduation.jpg"  alt="Card image cap">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/classroom.jpg" alt="Card image cap">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/facepainting.jpg"  alt="Card image cap">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/ourday.jpg" alt="Card image cap">
+          </div>
+        </div>
+  
+      </div>
+      <!--/.First slide-->
+  
+      <!--Second slide-->
+      <div class="carousel-item">
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/ROYALS.jpg"
+              alt="Card image cap">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/arc.jpg"
+              alt="Card image cap">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/nurses.jpg" alt="Card image cap">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/botsoe.jpg" alt="Card image cap">
+          </div>
+        </div>
+  
+      </div>
+      <!--/.Second slide-->
+  
+      <!--Third slide-->
+      <div class="carousel-item">
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/nkrumah.jpg" alt="Card image cap">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/bernice1.jpg"  alt="Card image cap">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/culture.jpg" alt="Card image cap">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/vida.jpg" alt="Card image cap">
+          </div>
+        </div>
+  
+      </div>
+      <!--/.Third slide-->
+      <!--Fourth slide-->
+      <div class="carousel-item">
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/royalbanner.jpg" alt="Card image cap">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/nkrumahcar.jpg"  alt="Card image cap">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/class1.jpg" alt="Card image cap">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/bandboy.jpg" alt="Card image cap">
+          </div>
+        </div>
+      </div>
+      <!--Fourth slide-->
+      <!--Five slide-->
+      <div class="carousel-item">
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/princess.jpg" alt="Card image cap">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/kitchen.jpg"  alt="Card image cap">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/graphic.jpg" alt="Card image cap">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="images/head.jpg" alt="Card image cap">
+          </div>
+        </div>
+      </div>
+
+  <!--Five slide-->
+  <!--sixth slide-->
+  <div class="carousel-item">
+  
+    <div class="col-md-3 mb-3">
+      <div class="card">
+        <img class="img-fluid" src="images/form3.jpg" alt="Card image cap">
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <div class="card">
+        <img class="img-fluid" src="images/bernicenice.jpg"  alt="Card image cap">
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <div class="card">
+        <img class="img-fluid" src="images/klenam.jpg" alt="Card image cap">
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <div class="card">
+        <img class="img-fluid" src="images/excursionmusuem.jpg" alt="Card image cap">
+      </div>
+    </div>
+  </div>
+  <!---sixth slide-->
+    </div>
+    <!--/.Slides-->
+  
+  </div>
+  <!--/.Carousel Wrapper-->
+
+
+
+
+<!--- Start Contact Section -->
+<div id="contact" class="offset">
+
+  <footer>
+    <div class="row">
+
+      <div class="col-md-5">
+        <img src="img/fas fa-crown" alt="">
+        <p>The Royal Family School is a unique, independent school founded by individuals with a vision of excellent supervisory Montessori education.</p>
+        <strong>Our Location</strong>
+        <p>GES-205-7878, ANSHONGMAN ESTATE, MUSUKU<br>ACCRA</p>
+        <strong>Contact Info</strong>
+        <p>+233243765080<br>theroyalfamilyschool1@gmail.com</p>
+        <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fab fa-reddit-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+
+      <div class="col-md-7">
+        <h3>Contact Us</h3>
+
+        <form id="contact-form" method="post">
+
+          <div class="messages"></div>
+          <div class="controls">
+
+            <div class="form-group">
+              <input id="form_name" type="text" name="name" class="form-control"
+                placeholder="Enter your name." required="required">
+            </div>
+
+            <div class="form-group">
+              <input id="form_email" type="email" name="email" class="form-control"
+                placeholder="Enter your email." required="required">
+            </div>
+
+            <div class="form-group">
+              <textarea id="form_message" name="message" class="form-control"
+                placeholder="Add your message." rows="4" required="required"></textarea>
+            </div>
+
+            <input type="submit" class="btn btn-outline-light btn-sm" value="Send message">
+
+          </div>
+
+        </form>
+
+      </div>
+
+      <hr class="socket">
+      &copy; 2020 ARCHIMEDES TECHONOLOGY.
+
+    </div>
+    <!--- End of Row -->
+  </footer>
+  <!--- End of Footer -->
+
+</div>
+<!--- End Contact Section -->
+
+<!--- Top Scroll -->
+<a href="#home" class="top-scroll">
+  <i class="fas fa-angle-up"></i>
+</a>
+<!--- End of Top Scroll -->
+
+
+
+</div>
 <script>
     $(function() {
         // this is the page scrolling script
@@ -190,4 +507,48 @@
         });
     });
 </script>
+<!---counters
+<script scr="jquery.counterup.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script>
+    jQuery(document).ready(function( $ )
+    {
+        $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+});
+    });
+</script>-->
+<script>
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+    
+            // Lower inc to slow and higher to slow
+            const inc = target / speed;
+    
+            // console.log(inc);
+            // console.log(count);
+    
+            // Check if target is reached
+            if (count < target) {
+                // Add inc to count and output in counter
+                counter.innerText = count + inc;
+                // Call function every ms
+                setTimeout(updateCount, 1);
+            } else {
+                counter.innerText = target;
+            }
+        };
+    
+        updateCount();
+    });
+    
+</script>
+
+
+
+
+</body>
 </html>

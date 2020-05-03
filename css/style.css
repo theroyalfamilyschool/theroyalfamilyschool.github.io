@@ -56,7 +56,283 @@ footer p, footer a {
     padding: 3px 8px;
 }
 
+/*.counterup {
+    background-color: red;
+    
+} 
+.counter-section {
+    margin: 10% auto;
+    color: white;
+}
+ 
+.icon-box {
+    border: 1px solid purple;
+    height: 100px;
+    width: 100px;
+    margin: 20px auto;
+    transform: rotate(45deg);
+   
+}
+.icon-box .fa {
+    font-size: 40px;
+    margin: 25px auto;
+    color: white;
+    
+   
+}
+.counte-box p {
+    font-size: 20px;
+}
+
+.counter-box .counter {
+    font-size: 80px;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+header {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counters {
+    background: #0f479a;
+    color: #fff;
+    padding: 40px 20px;
+    border-top: 3px lightskyblue solid;
+}
+
+.counters .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    text-align: center;
+}
+
+.counters i {
+    color: lightskyblue;
+    margin-bottom: 5px;
+}
+
+.counters .counter {
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+    .counters .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .counters .container > div:nth-of-type(1),
+    .counters .container > div:nth-of-type(2) {
+        border-bottom: 1px lightskyblue solid;
+        padding-bottom: 20px;
+    }
+}
+
+/*Gallery*/
+@media (min-width: 768px) {
+    .carousel-multi-item-2 .col-md-3 {
+    float: left;
+    width: 25%;
+    max-width: 100%; } }
+    
+    .carousel-multi-item-2 .card img {
+    border-radius: 2px; }
 
 
 
 
+/*contacts*/
+*============= CONTACT SECTION =============*/
+
+footer {
+  /* background: url('') no-repeat; */
+  /* background-size: cover; */
+  background-color: #40474e;
+  color: white;
+}
+
+footer .row {
+  background-color: rgba(57, 63, 70, 0.85);
+  padding: 1rem 2rem 3rem;
+}
+
+footer img {
+  height: 2rem;
+  margin: 1.5rem 0;
+}
+
+footer a {
+  color: white;
+}
+
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 1.2rem .5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover {
+  color: #5c8e90!important;
+}
+
+footer h3 {
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
+
+/*--- Contact Form --*/
+
+.form-group {
+  margin-bottom: 1.3rem;
+}
+
+.form-control {
+  background-color: #53595f;
+  border-radius: 0;
+  border: .15rem solid #666b71;
+  color: white!important;
+  font-size: 1.1rem;
+}
+
+.form-control:focus {
+  background: #53595f;
+  border: .15rem solid #666b71;
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+  color: #b2b5b8!important;
+}
+
+input.btn {
+  cursor: pointer;
+}
+
+hr.socket {
+  border-top: .2rem solid #666b71;
+  width: 100%;
+}
+
+/*============= TOP SCROLL =============*/
+
+.top-scroll svg.svg-inline--fa {
+  font-size: 3rem;
+  height: 1.7rem;
+  color: #53595f;
+  background: white;
+}
+
+a.top-scroll {
+  right: 1.2rem;
+  bottom: 1.2rem;
+  position: fixed;
+  opacity: .3;
+  z-index: 1000;
+  display: none;
+}
+
+a.top-scroll:hover {
+  opacity: .5;
+}
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 992px (lg) */
+
+@media (max-width: 991px) {
+  .caption h1 {
+    font-size: 3.5rem;
+    letter-spacing: .2rem;
+    padding-bottom: .8rem;
+  }
+  .caption h3 {
+    font-size: 2.2rem;
+    padding-bottom: 1.7rem;
+  }
+  .btn-lg {
+    padding: .7rem 1.2rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 2.1rem;
+  }
+  /*--- Drop-down Menu --*/
+  .dropdown-submenu.solid, .dropdown-menu.show.solid {
+    background: transparent!important;
+  }
+}
+
+/* Devices under 768px (md) */
+
+@media (max-width: 767px) {
+  .caption h1 {
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    padding-bottom: .5rem;
+  }
+  .caption h3 {
+    font-size: 1.7rem;
+    padding-bottom: 1.2rem;
+  }
+  .btn-lg {
+    padding: .6rem 1.1rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 1.8rem;
+  }
+  #fixed {
+    background-image: url('img/fixed/apple-mobile.png');
+  }
+  #fixed-2 {
+    background-image: url('img/fixed/office-mobile.png');
+  }
+  footer {
+    background: url('img/footer/footer-mobile.png') no-repeat;
+  }
+  .graduates img {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  .top-scroll {
+    display: none!important;
+  }
+}
+
+/* Devices under 576px (sm) */
+
+@media (max-width: 575px) {
+  .caption h1 {
+    font-size: 1.9rem;
+    letter-spacing: .1rem;
+    padding-bottom: .4rem;
+  }
+  .caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .btn-lg {
+    padding: .4rem .9rem;
+    font-size: .9rem;
+  }
+  .narrow {
+    width: 85%;
+  }
+}
